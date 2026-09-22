@@ -6,23 +6,29 @@
   <title>HR Calculator Suite — Vantage Circle</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-header-inner">
-      <div class="brand-row">
-        <img class="brand-logo" src="assets/vantage-circle.png" alt="Vantage Circle" width="2000" height="292">
-      </div>
-      <h1 class="site-title">HR <span class="u-underline">Calculators</span></h1>
-      <p class="tagline">Every HR calculation in one place. Search, pick a tool, enter the values — get the answer.</p>
-      <div class="search-hero">
-        <span class="search-ico" aria-hidden="true">🔍</span>
-        <input id="search" type="search" placeholder="Search calculators (e.g. attrition, gratuity, PF)…" autocomplete="off">
-      </div>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <img class="topbar-logo" src="assets/vantage-circle.png" alt="Vantage Circle" width="2000" height="292">
     </div>
   </header>
+
+  <!-- Hero: title + search -->
+  <section class="hero">
+    <h1 class="hero-title">HR Calculators</h1>
+    <p class="hero-sub">Search and discover every HR &amp; payroll calculation — recruitment, engagement, L&amp;D, compensation and India payroll.</p>
+    <form class="searchbar" id="searchbar" role="search">
+      <svg class="searchbar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path>
+      </svg>
+      <input id="search" type="search" placeholder="Search calculators (e.g. attrition, gratuity, PF)…" autocomplete="off" aria-label="Search calculators">
+      <button type="submit" class="searchbar-btn">Search</button>
+    </form>
+  </section>
 
   <main class="layout">
     <!-- Grid / home view -->
@@ -40,8 +46,8 @@
   </main>
 
   <footer class="site-footer">
-    <p>Percentages, ratios and payroll estimates for HR. Statutory rates (PF, gratuity, ESI, bonus) are pre-filled defaults you can edit — always confirm against current regulations. Payroll figures are estimates, not tax advice.</p>
     <img class="footer-logo" src="assets/vantage-circle.png" alt="Vantage Circle" width="2000" height="292">
+    <p>Percentages, ratios and payroll estimates for HR. Statutory rates (PF, gratuity, ESI, bonus) are pre-filled defaults you can edit — always confirm against current regulations. Payroll figures are estimates, not tax advice.</p>
   </footer>
 
   <script src="js/format.js"></script>

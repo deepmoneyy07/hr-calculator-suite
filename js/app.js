@@ -104,6 +104,17 @@
     renderGrid();
   });
 
+  // The Search button submits the form; filtering is live, so just keep the
+  // grid on screen (don't reload the page).
+  const searchForm = document.getElementById('searchbar');
+  if (searchForm) {
+    searchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (location.hash) location.hash = '';
+      renderGrid();
+    });
+  }
+
   /* ---------- Build one calculator card (detail) ---------- */
   function buildCard(calc) {
     const card = document.createElement('section');

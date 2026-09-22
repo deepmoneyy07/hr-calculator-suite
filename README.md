@@ -15,11 +15,11 @@ India payroll). **36 calculators** in five categories.
 
 ## Brand
 
-- Colors: Navy `#29294C` (dominant) · Orange `#FF6D05` (key numbers, highlights) · Purple
-  `#654AB7` and Pink `#FD5595` (sparing accents) · White.
-- Fonts (loaded from Google Fonts): **Playfair Display** for headings (stand-in for Albra),
-  **Lato** for body, **Montserrat** for the wordmark. Needs internet for the exact fonts;
-  falls back to system fonts offline.
+- Layout: a light, airy tools-directory interface (title + prominent search + borderless
+  vertical cards), with the Vantage Circle logo (navy on the light header and footer).
+- Colors: Navy `#29294C` (text) · Orange `#FF6D05` (primary accent — Search button, key
+  numbers) · category colours for tags. White background.
+- Font: **Lato** throughout (loaded from Google Fonts; falls back to system sans offline).
 
 ## How to run
 
